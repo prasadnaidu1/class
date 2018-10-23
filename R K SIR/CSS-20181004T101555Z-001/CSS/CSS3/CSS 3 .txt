@@ -1,0 +1,163 @@
+border-radius
+
+	CSS border-radius property, you can give any element "rounded corners".
+
+gradients
+
+	CSS gradients let you display smooth transitions between two or more specified colors.
+	
+	background: linear-gradient(direction, color-stop1, color-stop2, ...);
+	
+	#grad {
+		background: linear-gradient(red, yellow);
+	}
+	
+	Top to Bottom  is the default.(to bottom, to top, to right, to left, to bottom right).
+	
+	background: linear-gradient(to right, red , yellow);
+	
+	background: linear-gradient(angle, color-stop1, color-stop2); 
+	
+	background: linear-gradient(red, yellow, green);
+	
+	A radial gradient is defined by its center.
+	
+	background: radial-gradient(shape size at position, start-color, ..., last-color);
+
+Shadow Effects
+
+	text-shadow
+	box-shadow
+	
+	CSS text-shadow  Adds one or more shadows to a text 
+	
+		secret Adds one or more shadows to an element
+	
+		text-shadow: 2px 2px 5px red;
+		
+		box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	
+word-wrap
+		
+		CSS word-wrap property allows long words to be able to be broken and wrap onto the next line. 
+
+
+CSS Transforms
+
+		CSS transforms allow to translate, rotate, scale, and skew elements.
+		
+		A transformation is an effect that lets an element change shape, size and position.
+		
+		
+		translate()
+		rotate()
+		scale()
+		skewX()
+		skewY()
+		matrix()
+		
+		translate:-
+		
+			translate() method moves an element from its current position to the desired location.
+			
+		rotate: -
+		
+			rotate() method rotates an element clockwise or counter-clockwise according to a given degree.
+			
+		scale: -
+		
+			scale() method increases or decreases the size of an element.
+			
+		skew: -
+		
+			skew() method skews an element along the X and Y-axis by the given angles.
+			
+		matrix: -
+		
+			matrix() method combines all the 2D transform methods into one.
+			
+			matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+			
+			matrix(1, 0.3, 0, 1, 0, 0);
+			
+Transitions: -
+
+	CSS transitions allows you to change property values smoothly (from one value to another), over a given duration.
+	
+	transition 			A shorthand property for setting the four transition properties into a single property
+	
+	transition-delay 	Specifies a delay (in seconds) for the transition effect
+	transition-duration 	Specifies how many seconds or milliseconds a transition effect takes to complete
+	transition-property 	Specifies the name of the CSS property the transition effect is for
+	transition-timing-function 	Specifies the speed curve of the transition effect
+	
+		ease 			Default value. Specifies a transition effect with a slow start, then fast, then end slowly 
+		linear 			Specifies a transition effect with the same speed from start to end
+		ease-in 		Specifies a transition effect with a slow start
+		ease-out 		Specifies a transition effect with a slow end
+		ease-in-out 	Specifies a transition effect with a slow start and end
+		
+	transition: property duration timing-function delay;
+
+animation
+
+	CSS animations allows animation of most HTML elements without using JavaScript or Flash!.
+	
+	animation lets an element gradually change from one style to another.
+	
+	To use CSS animation, you must first specify some keyframes for the animation.
+	
+	Keyframes hold what styles the element will have at certain times.
+	
+	
+	animation property is a shorthand property for eight of the animation properties:
+	
+	 /* The animation code */
+	@keyframes ex1 {
+		from {width: 100px;}
+		to {width: 200px;}
+	}
+
+	/* The element to apply the animation to */
+	div {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		animation-name: ex1;
+		animation-duration: 4s;
+	} 
+
+	
+	animation-name 				name of the keyframe
+	
+	animation-duration 			seconds or milliseconds an animation takes to complete
+	
+	animation-timing-function 	Specifies the speed curve of the animation
+		ease - Specifies an animation with a slow start, then fast, then end slowly (this is default)
+		linear - Specifies an animation with the same speed from start to end
+		ease-in - Specifies an animation with a slow start
+		ease-out - Specifies an animation with a slow end
+		ease-in-out - Specifies an animation with a slow start and end
+	
+	animation-delay 			delay before the animation will start
+	
+	animation-iteration-count 	how many times an animation should be played
+		
+		number|infinite
+	
+	animation-direction 		whether or not the animation should play in reverse on alternate cycles
+		
+		normal - The animation is played as normal (forwards). This is default
+		reverse - The animation is played in reverse direction (backwards)
+		alternate - The animation is played forwards first, then backwards
+		alternate-reverse - The animation is played backwards first, then forwards
+
+
+
+
+
+
+
+
+
+
